@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle, #5c1ea8, #2c064f);
+}
+
+.app {
+  display: flex;
+  width: 1200px;
+  height: 720px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 220px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #eee;
+}
+
+.logo {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.menu button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: none;
+  text-align: left;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.menu .active {
+  background: #2f6df6;
+  color: white;
+}
+
+.logout {
+  margin-top: auto;
+  border: none;
+  background: none;
+  color: #999;
+  cursor: pointer;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 20px 32px;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search {
+  width: 300px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+/* TASKS */
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.new-task {
+  background: #2f6df6;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.columns {
+  display: flex;
+  gap: 20px;
+}
+
+/* COLUMN */
+.column {
+  flex: 1;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.column.blue { background: #eef4ff; }
+.column.orange { background: #fff3e8; }
+.column.red { background: #ffecec; }
+
+.column-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.checkbox {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+/* CARD */
+.task-card {
+  background: white;
+  padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.task-card img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.task-card p {
+  flex: 1;
+  font-size: 13px;
+  color: #555;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 6px;
+}
