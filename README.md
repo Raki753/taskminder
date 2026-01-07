@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# TaskMinder – Task Management Dashboard (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A pixel-perfect Task Management Dashboard UI built using React, HTML, and pure CSS, inspired by the provided design reference.
 
-## Available Scripts
+This project focuses on UI accuracy, clean component structure, and simple state-based task flow without using any external UI libraries.
 
-In the project directory, you can run:
+Features
 
-### `npm start`
+📌 Pixel-perfect desktop UI
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🧭 Fixed sidebar navigation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🔍 Top header with search, notification, and user avatar
 
-### `npm test`
+📋 Task board with three columns:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To Do
 
-### `npm run build`
+In Progress
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Done
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+➕ Create new tasks
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+✏️ Move tasks forward using Edit
 
-### `npm run eject`
+🗑️ Delete tasks
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🎨 Pure CSS styling (no frameworks)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+⚛️ Built with React Functional Components & Hooks
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Action                 | Result                       |
+| ---------------------- | ---------------------------- |
+| **New task +**         | Adds a task to **To Do**     |
+| **Edit (To Do)**       | Moves task → **In Progress** |
+| **Edit (In Progress)** | Moves task → **Done**        |
+| **Edit (Done)**        | Disabled / Hidden            |
+| **Delete**             | Removes task permanently     |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Tech Stack
 
-## Learn More
+React (Functional Components)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+useState for state management
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+HTML5
 
-### Code Splitting
+Pure CSS (Flexbox & Grid)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+❌ No backend
 
-### Analyzing the Bundle Size
+❌ No UI libraries (MUI, Bootstrap, Tailwind, etc.)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+❌ No drag & drop
 
-### Making a Progressive Web App
+src/
+│── App.jsx            # Root layout
+│── Sidebar.jsx        # Left navigation
+│── Header.jsx         # Top header
+│── TaskBoard.jsx      # Main task logic
+│── Column.jsx         # Task column component
+│── TaskCard.jsx       # Individual task card
+│── styles.css         # Global styles
+│── index.js           # Entry point
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+🚀 Getting Started
+1️⃣ Clone the repository
+(https://github.com/Raki753/taskminder.git).
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+cd taskminder
 
-### `npm run build` fails to minify
+2️⃣ Install dependencies
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3️⃣ Run the app
+npm start
+
+
+The app will run at:
+
+http://localhost:3000
+
+
+
