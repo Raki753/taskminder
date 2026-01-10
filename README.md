@@ -1,5 +1,7 @@
 # TaskMinder – Task Management Dashboard (React)
 
+![My Local Image](./public/webpage.png)
+
 A pixel-perfect Task Management Dashboard UI built using React, HTML, and pure CSS, inspired by the provided design reference.
 
 This project focuses on UI accuracy, clean component structure, and simple state-based task flow without using any external UI libraries.
